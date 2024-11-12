@@ -1,4 +1,4 @@
-package Labs.Lab8Programs;
+package DSA.Labs.Lab8Programs;
 
 public class Task1DecimalToBinary {
 
