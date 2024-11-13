@@ -4,7 +4,6 @@ import java.util.Queue;
 
 public class CompleteBinaryTreeLinkedList {
 
-    // Node class representing each node in the tree
     static class Node {
         int data;
         Node left, right;
@@ -16,9 +15,8 @@ public class CompleteBinaryTreeLinkedList {
         }
     }
 
-    private Node root; // Root of the tree
+    private Node root; 
 
-    // Constructor
     public CompleteBinaryTreeLinkedList() {
         root = null;
     }
@@ -27,36 +25,29 @@ public class CompleteBinaryTreeLinkedList {
     public void addNode(int data) {
         Node newNode = new Node(data);
 
-        // If the tree is empty, make the new node the root
         if (root == null) {
             root = newNode;
             return;
         }
 
-        // Create a Queue to perform level-order traversal
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
 
-        // Level-order traversal to find the first empty position
         while (!queue.isEmpty()) {
             Node current = queue.poll();
 
-            // If the left child is empty, add the new node here
             if (current.left == null) {
                 current.left = newNode;
                 return;
             } 
-            // If the right child is empty, add the new node here
             else if (current.right == null) {
                 current.right = newNode;
                 return;
-            }
-            
+            }            
             else {
                 queue.add(current.left);
                 queue.add(current.right);
             }
-
         }
     }
 

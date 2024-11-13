@@ -13,13 +13,14 @@ public class Task1TreeTraversals {
 
         public Node (int data){
             this.data = data;
-            this.left = left;
-            this.right = right;
+            this.left = null;
+            this.right = null;
         }
         
     }
 
-    Node root;
+    public Node root;
+    
     Task1TreeTraversals(int data){
         root = new Node(data);
     }
@@ -42,7 +43,7 @@ public class Task1TreeTraversals {
             current.left = addNodeRecursive(current.left, data);
         } else if (data > current.data) {
             current.right = addNodeRecursive(current.right, data);
-        } // duplicates are ignored
+        } 
 
         return current;
     }
@@ -67,6 +68,7 @@ public class Task1TreeTraversals {
         InOrder(root.right);
     }
 
+    // Post-Order Traversal
     public void PostOrder(Node root){
         if (root == null) {
             return;
@@ -77,6 +79,7 @@ public class Task1TreeTraversals {
         
     }
 
+    // Level Order Traversal
     public void LevelOrder(Node root){
         if (root!=null) {
             Queue<Node> q = new LinkedList<>();
