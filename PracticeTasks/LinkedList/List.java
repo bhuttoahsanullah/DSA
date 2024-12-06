@@ -1,4 +1,4 @@
-package SingleLinkedList;
+package LinkedList;
 
 // a list interface
 public interface List {

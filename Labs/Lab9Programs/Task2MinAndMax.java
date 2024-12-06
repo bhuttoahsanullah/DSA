@@ -1,4 +1,4 @@
-package Labs.Lab9Programs;
+package Lab9Programs;
 
 public class Task2MinAndMax {
     public class Node {

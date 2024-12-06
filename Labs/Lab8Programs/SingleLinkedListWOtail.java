@@ -1,5 +1,4 @@
-package SingleLinkedList;
-
+package Lab8Programs;
 // Complete Single Linked List Code without Tail.
 public class SingleLinkedListWOtail {
 

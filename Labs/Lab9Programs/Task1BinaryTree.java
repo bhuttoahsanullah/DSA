@@ -1,4 +1,4 @@
-package Labs.Lab9Programs;
+package Lab9Programs;
 
 public class Task1BinaryTree {
 
@@ -10,8 +10,8 @@ public class Task1BinaryTree {
 
         public Node (int data){
             this.data = data;
-            this.left = left;
-            this.right = right;
+            this.left = null;
+            this.right = null;
         }
         
     }

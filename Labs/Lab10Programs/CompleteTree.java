@@ -1,5 +1,5 @@
 // package BinarySearchTreeTraversing;
-package Labs.Lab10Programs;
+package Lab10Programs;
 
 import java.util.LinkedList;
 import java.util.Queue;

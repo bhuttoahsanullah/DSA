@@ -1,4 +1,4 @@
-package Labs.Lab10Programs;
+package Lab10Programs;
 
 public class Task4IsSubTree {
 

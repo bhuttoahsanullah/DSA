@@ -1,3 +1,4 @@
+
 public class Task1and2SimpleRecursion {
 
     public static void NumInAscending(int n){

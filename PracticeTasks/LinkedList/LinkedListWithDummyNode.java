@@ -1,4 +1,4 @@
-package SingleLinkedList;
+package LinkedList;
 
 public class LinkedListWithDummyNode implements List{
 

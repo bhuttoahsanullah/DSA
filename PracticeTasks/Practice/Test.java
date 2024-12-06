@@ -1,14 +1,18 @@
-// Recursion Example 1
-public class Test {
-    public static void test(int n){
-        if(n>0){
-            System.out.println(n);
-            test(n-1);
-            System.out.println(n);
-        }
-    }
+/**
+ * test
+ */
+public class test {
+
     public static void main(String[] args) {
-        
-        test(4);
+        int a =5;
+        // int b= 2;
+        // float res = a/b;
+        // System.out.println(b);
+        // System.out.println(a+b++);
+        // System.out.println(b);
+        System.out.println(++a*a++);
+        System.out.println(a);
     }
+
+    
 }
